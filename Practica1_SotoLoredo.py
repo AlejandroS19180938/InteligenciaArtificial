@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
 # Cargar el conjunto de datos advertising
-df = pd.read_csv("C:/Users/CASA/Documents/APracticas/advertising.csv")
+df = pd.read_csv("C:/Users/CASA/Documents/ALEJANDRPracticas/advertising.csv")
 
 # Seleccionar características y etiquetas
 X = df[["Daily Time Spent on Site", "Age"]].values
