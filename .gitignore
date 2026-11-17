@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modelos exportados
+*.h5
+*.keras
+temperatura/
+
+# Editor / sistema
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db

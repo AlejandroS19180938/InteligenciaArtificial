@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
 # Cargar el conjunto de datos advertising
-df = pd.read_csv("C:/Users/CASA/Documents/ALEJANDRPracticas/advertising.csv")
+df = pd.read_csv("advertising.csv")
 
 # Seleccionar características y etiquetas
 X = df[["Daily Time Spent on Site", "Age"]].values
@@ -33,7 +33,7 @@ class Perceptron(object):
 
     """
 
-    def _init_(self, eta=0.01, n_iter=50, random_state=1):
+    def __init__(self, eta=0.01, n_iter=50, random_state=1):
         self.eta = eta
         self.n_iter = n_iter
         self.random_state = random_state
