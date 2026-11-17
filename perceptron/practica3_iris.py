@@ -2,11 +2,11 @@ import numpy as np
 
 class Perceptron (object):
 
-   def _init_(self, eta=0.01, n_iter=10): 
+   def __init__(self, eta=0.01, n_iter=10): 
       self.eta = eta
       self.n_iter = n_iter
       
-   def fit(self, x, y): 
+   def fit(self, X, y): 
       self.w_ = np.zeros(1 + X.shape[1]) 
       self.errors_ = []
 
@@ -18,7 +18,7 @@ class Perceptron (object):
                 self.w_[0] += update
                 errors += int(update != 0.0)
             self.errors_.append(errors)
-            return self
+      return self
       
    def net_input(self, X):
     """Calculate net input"""
